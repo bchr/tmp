@@ -1,0 +1,25 @@
+network:
+    version: 2
+    ethernets:
+        eth0:
+            addresses:
+            - 46.101.144.114/18
+            gateway4: 46.101.128.1
+            match:
+                macaddress: 04:01:d7:92:b1:01
+            nameservers:
+                addresses:
+                - 1.1.1.1
+                - 1.0.0.1
+                search: []
+            set-name: eth0
+        eth1:
+            addresses:
+            - 10.135.0.65/16
+            match:
+                macaddress: 04:01:d7:92:b1:02
+            nameservers:
+                addresses:
+                - 10.35.0.65/16
+                search: []
+            set-name: eth1
